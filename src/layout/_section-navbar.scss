@@ -1,0 +1,70 @@
+.navbar {
+  background-color: color("primary-alpha");
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  left: 0;
+  bottom: $header-height;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  .container {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      transition: opacity 0.5s ease;
+      a {
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color: color("wth");
+      }
+      a:hover {
+        background-color: color("primary");
+        color: color("wth");
+        opacity: 1;
+      }
+      a.active {
+        color: color("wth");
+        text-decoration: none;
+      }
+    }
+  }
+}
+.navbar.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    border-top: 1px solid color("wth-alpha");
+    height: $navbar-height;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    .container {
+      height: 100%;
+      .menu {
+        flex-direction: row;
+        float: right;
+        padding: 0 1rem;
+        margin: 0;
+        height: 100%;
+        a {
+          display: block;
+          padding: 0 20px;
+          color: color("wth");
+          line-height: 50px;
+        }
+        a.active {
+          background-color: color("primary");
+        }
+        a:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
