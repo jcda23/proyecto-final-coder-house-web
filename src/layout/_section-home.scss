@@ -1,14 +1,14 @@
 .hero-image {
-  @include hero-image("../img/alpinismo7.jpg");
+  @include hero-image("../img/alpinismo.webp");
   background-attachment: scroll;
 
   .hero-image-opacity {
     @include flexible(flex, none, center, center);
     width: 100%;
-    max-height: 450px;
-    min-height: 450px;
+    max-height: 530px;
+    min-height: 530px;
     text-align: center;
-    background-color: color("blk-alpha");
+    background-color: rgba(0, 0, 0, 0.3);
 
     .hero-image-content {
       h2 {

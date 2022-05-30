@@ -7,12 +7,16 @@
   display: none;
 }
 
+.section {
+  padding: 2rem 1rem;
+}
+
 .section-title {
   border-bottom: 2px solid map-get($map: $palette, $key: "primary");
   width: 100%;
   text-align: center;
   font-size: 900;
-  color: map-get($map: $palette, $key: "sub-title");
+  color: map-get($map: $palette, $key: "title");
   text-transform: uppercase;
 }
 
@@ -22,23 +26,19 @@
   width: 100%;
   border-bottom: 2px solid map-get($map: $palette, $key: "primary");
   text-align: center;
-  color: map-get($map: $palette, $key: "sub-title");
-  letter-spacing: 5px;
+  color: map-get($map: $palette, $key: "title");
   font-size: 900;
   text-transform: uppercase;
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  margin: 2rem auto;
-  color: map-get($map: $palette, $key: "tittle");
+  color: map-get($map: $palette, $key: "text");
   text-align: justify;
   p {
     width: 100%;
     text-align: justify;
-    color: color("sub-title");
+    color: color("text");
     text-align: justify;
   }
 }

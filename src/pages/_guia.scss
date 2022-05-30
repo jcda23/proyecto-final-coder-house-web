@@ -11,10 +11,9 @@
     text-transform: uppercase;
 
     h1 {
-      font-size: 2.25rem;
       text-align: center;
       color: color("sub-title");
-      padding-bottom: 0.3rem;
+
       text-transform: uppercase;
     }
 
@@ -48,13 +47,14 @@
           position: relative;
           display: block;
           overflow: hidden;
+          pointer-events: none;
           img {
             display: inline-block;
             width: 100%;
             height: auto;
             object-fit: cover;
             border-style: none;
-            vertical-align: middle;
+            pointer-events: none;
           }
         }
         a {
@@ -111,7 +111,7 @@
     }
     .guid-pages-container {
       margin: 0 auto;
-      padding-top: 6rem;
+      padding: 2rem 0 1rem 0;
     }
 
     .article-gas {

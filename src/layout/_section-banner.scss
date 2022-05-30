@@ -1,10 +1,8 @@
 .banner {
   @extend .guid-pages;
-  padding-bottom: 2rem;
   .banner-container {
-    max-width: $max-width;
     margin: 0 auto;
-    padding-top: 4rem;
+    max-width: $max-width;
     .banner-image {
       @extend .picture-guid-page;
     }

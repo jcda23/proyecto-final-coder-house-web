@@ -1,21 +1,16 @@
 .article-container {
-  padding-top: 4rem;
+  margin-top: 2rem;
   .article-title {
     @extend .section-title;
-    margin: 4rem auto 2rem auto;
-    padding: 0.5rem 1rem;
   }
   .article-text {
     @extend .text;
-    padding: 0 1rem;
-    margin: 2rem auto;
   }
 }
 
 @media (min-width: 1024px) {
   .article-container {
     .article-text {
-      padding: 0;
     }
   }
 }

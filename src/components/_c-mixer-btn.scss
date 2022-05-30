@@ -7,13 +7,12 @@
     width: 200px;
     text-transform: uppercase;
     font-weight: bold;
-    background-color: color("second");
+    background-color: color("primary");
     color: color("wth");
     span {
       position: absolute;
       display: block;
-      background: color("primary-alpha");
-      background: $linear-gradient-span-btn;
+      background: color("second");
     }
     span:nth-child(1) {
       left: 0;
@@ -57,7 +56,7 @@
     }
   }
   a:hover {
-    background-color: color("primary");
+    background-color: color("second");
     color: color("wth");
     transition: 0.4s;
     transition-delay: 1s;
@@ -86,5 +85,20 @@
     transform-origin: right;
     transition: transform 0.25s;
     transition-delay: 0.75s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mixer-btn {
+    a {
+      background-color: color("second");
+
+      span {
+        background: color("primary");
+      }
+    }
+    a:hover {
+      background-color: color("primary");
+    }
   }
 }
