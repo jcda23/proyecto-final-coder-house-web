@@ -1142,7 +1142,7 @@ p {
     .main-about .content-main .article-about-main .about-info-main {
       padding: 1rem 1rem; }
       .main-about .content-main .article-about-main .about-info-main h3 {
-        padding-bottom: 1rem; }
+        padding-bottom: 2rem; }
       .main-about .content-main .article-about-main .about-info-main p {
         padding-top: 1rem;
         margin: 0;
@@ -1187,7 +1187,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .main-about {
-    margin-top: 3rem;
+    margin-top: 4rem;
     overflow: hidden; }
     .main-about .content-main {
       display: flex; }

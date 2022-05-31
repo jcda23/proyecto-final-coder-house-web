@@ -7,7 +7,7 @@
         padding: 1rem 1rem;
         h3 {
           @extend .title;
-          padding-bottom: 1rem;
+          padding-bottom: 2rem;
         }
 
         p {
@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 768px) {
   .main-about {
-    margin-top: 3rem;
+    margin-top: 4rem;
     overflow: hidden;
     .content-main {
       display: flex;
