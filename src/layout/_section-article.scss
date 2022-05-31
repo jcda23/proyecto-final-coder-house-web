@@ -2,6 +2,7 @@
   padding: 4rem 1rem;
   .article-title {
     @extend .section-title;
+    padding-bottom: 2rem;
   }
   .article-text {
     @extend .text;
