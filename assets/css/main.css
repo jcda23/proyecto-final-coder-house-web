@@ -1182,11 +1182,10 @@ p {
     .main-about .content-main {
       display: flex; }
       .main-about .content-main .article-about-main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem; }
+        display: flex;
+        flex-direction: column; }
         .main-about .content-main .article-about-main .about-info-main {
-          padding: 1rem 0 1rem 1rem; }
+          padding: 1rem; }
         .main-about .content-main .article-about-main .about-image-main {
           padding: 1rem 1rem 1rem 0; }
           .main-about .content-main .article-about-main .about-image-main img {
@@ -1406,5 +1405,10 @@ p {
     width: 100%; }
   .portfolio .grid .item {
     width: calc(50% - 20px); } }
+@media screen and (max-width: 500px) {
+  .portfolio .header-portfolio .portfolio-form .search-bar {
+    width: 100%; }
+  .portfolio .grid .item {
+    width: calc(100% - 20px); } }
 
 /*# sourceMappingURL=main.css.map */
