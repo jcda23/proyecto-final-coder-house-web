@@ -1,11 +1,16 @@
 .menu-btn {
-  outline: thin solid color("primary");
+  outline: none;
   border: 0;
   cursor: pointer;
   background-color: color("second");
 
   svg > * {
     fill: color("primary");
+  }
+
+  svg {
+    width: 50px;
+    height: 50px;
   }
 }
 

@@ -4,19 +4,21 @@
   min-height: 100vh;
   width: 100%;
   padding-bottom: 10rem;
+  padding-top: 4rem;
 
   .contact {
-    max-width: 800px;
     @extend .size-viewport;
     h2 {
       color: color("wth");
     }
 
     .sub-title-contact {
+      max-width: 800px;
       padding-top: 1rem;
       color: color("wth");
       text-align: center;
       letter-spacing: 2px;
+      margin: 0 auto;
     }
 
     .section-title-card {
@@ -30,7 +32,6 @@
     .contact-form {
       background-color: color("wth");
       margin: 2rem auto;
-      padding: 1rem;
       max-width: 800px;
       z-index: 999;
 
@@ -88,6 +89,16 @@
         width: 4rem;
         height: 4rem;
         fill: color("primary");
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-contact {
+    .contact {
+      .sub-title-contact {
+        padding: 0 1rem;
       }
     }
   }

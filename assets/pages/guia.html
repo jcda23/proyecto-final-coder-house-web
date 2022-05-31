@@ -43,8 +43,8 @@
     <!-- Barra de navegacion -->
     <section class="navbar">
         <section class="container">
-            <nav class="menu">
-                <a class="active" href="../../index.html">Inicio</a>
+            <nav id="navegacion" class="menu">
+                <a class="activar" href="../../index.html">Inicio</a>
                 <a href="./guia.html">Guia</a>
                 <a href="./nosotros.html">Nosotros</a>
                 <a href="./portafolio.html">Portafolio</a>
@@ -54,15 +54,18 @@
     </section>
 
     <!-- Seccion de videos -->
-    <section class="guid-pages section">
-        <section class="guid-pages-container">
-            <section class="title-guid-pages container">
-                <h1>algunos trucos y consejos practicos para tus aventuras de camping, outdoor o deporte al aire libre
+    <main class="main-guid-container container">
+        <section class="guid-pages-videos "">
+            <section class=" guid-container-video section">
+            <section class="title-guid-video ">
+                <h1>algunos trucos y consejos practicos para tus aventuras de camping, outdoor o deporte al aire
+                    libre
                 </h1>
             </section>
         </section>
-        <section class="section-card-guid section">
-            <div class="card-guid-container container">
+        </section>
+        <section class="section-card-guid">
+            <div class="card-guid-container section ">
                 <div class="card-guid">
                     <section class="video-card-guid">
                         <iframe src="https://www.youtube.com/embed/geR1JwZvRqk" title="YouTube video player"
@@ -112,17 +115,17 @@
         </section>
 
         <!-- Primera seccion de contenido-->
-        <main class="guid-pages section">
+        <section class="guid-pages-text ">
             <section class="guid-pages-container">
                 <div class="guid-page">
                     <div class="bg-guid-page">
-                        <picture class="picture-guid-page">
+                        <picture class="picture-guid-page ">
                             <img src="../img/guia-combustible.jpg" alt="combustible">
                         </picture>
                     </div>
                 </div>
             </section>
-            <section id="combustible" class="title-guid-pages container">
+            <section id="combustible" class="title-guid-pages">
                 <h2>ELEGIR EL COMBUSTIBLE ADECUADO:</h2>
                 <h4>Es importante saber cual es combustible adecuado para la estufa, y en que ocasión utilizarlo, para
                     que
@@ -130,7 +133,7 @@
                     sea más
                     cómodo y sencillo.</h4>
             </section>
-            <article class="article-gas container">
+            <article class="article-gas">
                 <h3 class="title-gas-guid">DIFERENTES TIPOS DE COMBUSTIBLE</h3>
                 <P class="sub-title-gas-guid">Nuestras estufas multicombustible pueden funcionar con varios combustibles
                     diferentes, desde gas hasta
@@ -149,7 +152,7 @@
                     cada uno y los
                     aspectos a tener en cuenta.</P>
             </article>
-            <article class="article-gas container">
+            <article class="article-gas">
                 <h3 class="title-gas-guid">GAS LP</h3>
                 <P class="sub-title-gas-guid"><b>Ventajas:</b> Alto contenido energético, es decir, en relación con la
                     producción de
@@ -180,7 +183,7 @@
                     cartuchos de gas a bordo del
                     avión.</P>
             </article>
-            <article class="article-gas container">
+            <article class="article-gas">
                 <h3 class="title-gas-guid">GASOLINA BLANCA</h3>
                 <P class="sub-title-gas-guid"><b>Ventajas:</b> Este tipo de combustible es más puro que la gasolina
                     común
@@ -208,7 +211,7 @@
                     bombeo y
                     precalentamiento.</P>
             </article>
-            <article class="article-gas container">
+            <article class="article-gas">
                 <h3 class="title-gas-guid">QUEROSENO</h3>
                 <P class="sub-title-gas-guid"><b>Ventajas:</b> ofrece el mismo contenido energético que la gasolina,
                     pero
@@ -229,7 +232,7 @@
             </article>
 
             <!-- Segunda seccion de contenido-->
-            <section class="guid-pages-container section">
+            <section class="guid-pages-container">
                 <div class="guid-page">
                     <div class="bg-guid-page">
                         <picture class="picture-guid-page">
@@ -238,7 +241,7 @@
                     </div>
                 </div>
             </section>
-            <section class="title-guid-pages container">
+            <section class="title-guid-pages">
                 <h2>TODO SOBRE NUESTRO GAS:</h2>
                 <h4><strong>Nos apasiona cocinar al aire libre todo el año, sea cual sea el lugar</strong>. Por eso
                     disponemos de
@@ -247,8 +250,8 @@
                     Power Gas
                     y Winter Gas.</h4>
             </section>
-            <article class="article-gas container">
-                <h3 class="title-gas-guid">SIP POWER GAS</h3>
+            <article class="article-gas">
+                <h3 class="title-gas-guid">POWER GAS</h3>
                 <P class="sub-title-gas-guid">es una opción sostenible de combustible para exteriores con un rendimiento
                     que
                     imita al confiable Primus Power Gas. Al
@@ -265,7 +268,7 @@
                     Primus, así
                     como el regreso a nuestra línea de productos existente para mejoras adicionales.</P>
             </article>
-            <article class="article-gas container">
+            <article class="article-gas">
                 <h3 class="title-gas-guid">POWER GAS</h3>
                 <P class="sub-title-gas-guid">Power Gas es nuestro gas más vendido y es una mezcla de propano e
                     isobutano.
@@ -283,7 +286,7 @@
                     climáticas y la
                     temperatura son inciertas y variadas.</P>
             </article>
-            <article class="article-gas container">
+            <article class="article-gas">
                 <h3 class="title-gas-guid">SUMMER GAS</h3>
                 <P class="sub-title-gas-guid">Summer Gas es una mezcla de propano y butano y está optimizado para
                     condiciones de
@@ -295,7 +298,7 @@
                     gases.
                 </P>
             </article>
-            <article class="article-gas container">
+            <article class="article-gas">
                 <h3 class="title-gas-guid">WINTER GAS</h3>
                 <P class="sub-title-gas-guid">Al igual que Power Gas, Winter Gas es una mezcla de propano e isobutano
                     que,
@@ -317,10 +320,10 @@
                     </div>
                 </div>
             </section>
-            <section class="title-guid-pages container">
+            <section class="title-guid-pages ">
                 <h2>COMO FUNCIONA:</h2>
             </section>
-            <article class="article-gas container">
+            <article class="article-gas">
                 <P class="sub-title-gas-guid">Para la mayoría de nuestras cocinas utilizará gas como combustible.
                     Nuestros
                     contenedores contienen una mezcla de
@@ -374,8 +377,8 @@
                     presión
                     excesiva.</P>
             </article>
-        </main>
-    </section>
+        </section>
+    </main>
     <!--seccion footer -->
     <section class=" footer-container">
         <footer class="footer container">
@@ -433,7 +436,8 @@
             <small>© 2022 Copyright: Juan Da Silva</small>
         </div>
     </section>
-    <script src="https://kit.fontawesome.com/35ecaaf3bf.js" crossorigin="anonymous"></script>
+    <script defer src="../js/main.js"></script>
+    <script defer src="https://kit.fontawesome.com/35ecaaf3bf.js" crossorigin="anonymous"></script>
 </body>
 
 </html

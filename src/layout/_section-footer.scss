@@ -1,6 +1,7 @@
 .footer-container {
   background-color: color("bg-body");
   height: 100%;
+  padding-top: 4rem;
   .footer {
     padding: 0;
     .footer-contact {
@@ -162,7 +163,6 @@
 
 @media screen and (min-width: 1024px) {
   .footer-container {
-    padding-top: 4rem;
     .footer {
       display: grid;
       grid-template-columns: repeat(2, 50%);
