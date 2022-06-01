@@ -78,6 +78,7 @@
         border-bottom: none;
         margin: 0;
         padding: 2rem 0 0 0;
+        font-size: 2rem;
       }
       .sub-title-gas-guid {
         @extend .text;
@@ -86,7 +87,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .main-guid-container {
     .guid-pages-text {
       .guid-pages-container {

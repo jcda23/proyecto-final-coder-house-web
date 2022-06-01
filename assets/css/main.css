@@ -872,6 +872,7 @@ p {
       transform: scale(1.1);
       transition: all 0.5s ease-out; } }
 .logo-container {
+  display: none;
   position: relative;
   width: 3rem;
   height: 3rem;
@@ -915,6 +916,9 @@ p {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+@media screen and (min-width: 1024px) {
+  .logo-container {
+    display: initial; } }
 .products {
   height: 100%; }
   .products .swiper {
@@ -1136,7 +1140,7 @@ p {
     .contact .contact .contact-form .btn-header {
       background-color: #240229; } }
 .main-about {
-  padding: 4rem 0; }
+  padding-top: 6rem; }
   .main-about .content-main .article-about-main {
     width: 100%; }
     .main-about .content-main .article-about-main .about-info-main {
@@ -1153,7 +1157,7 @@ p {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        padding: 0 1rem; }
+        padding: 4rem 1rem; }
 
 .section-about {
   margin: 0 auto; }
@@ -1187,7 +1191,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .main-about {
-    margin-top: 4rem;
     overflow: hidden; }
     .main-about .content-main {
       display: flex; }
@@ -1196,10 +1199,6 @@ p {
         flex-direction: column; }
         .main-about .content-main .article-about-main .about-info-main {
           padding: 1rem; }
-        .main-about .content-main .article-about-main .about-image-main {
-          padding: 1rem 1rem 1rem 0; }
-          .main-about .content-main .article-about-main .about-image-main img {
-            padding: 0; }
 
   .section-about {
     padding-top: 4rem; }
@@ -1304,9 +1303,10 @@ p {
       justify-content: center;
       border-bottom: none;
       margin: 0;
-      padding: 2rem 0 0 0; }
+      padding: 2rem 0 0 0;
+      font-size: 2rem; }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .main-guid-container .guid-pages-text .guid-pages-container {
     padding: 2rem 0; }
   .main-guid-container .guid-pages-text .title-guid-pages {
@@ -1317,14 +1317,14 @@ p {
     .main-guid-container .guid-pages-text .article-gas .title-gas-guid {
       justify-content: left; } }
 .portfolio {
-  padding-top: 8rem; }
+  padding-top: 4rem; }
   .portfolio .header-portfolio .portfolio-form {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px; }
     .portfolio .header-portfolio .portfolio-form .search-bar {
-      width: 680px;
+      width: calc(100% - 1rem);
       height: 40px;
       line-height: 40px;
       background: #fff;
@@ -1348,25 +1348,23 @@ p {
     position: relative;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.5s linear 0.5s; }
+    transition: opacity 0.5s linear 0.5s;
+    margin: 0; }
     .portfolio .grid .item {
       position: absolute;
       display: block;
-      padding: 0;
-      margin: 10px;
-      width: calc(25% - 20px); }
+      width: 100%;
+      padding: 0.5rem 1rem; }
       .portfolio .grid .item .item-content {
-        position: relative; }
+        position: relative;
+        padding: 0.5rem 0; }
         .portfolio .grid .item .item-content .item-content-img {
           width: 100%;
           cursor: pointer;
-          vertical-align: top;
+          overflow: hidden;
+          object-fit: cover;
           border-radius: 4%;
-          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-          overflow: hidden; }
-        .portfolio .grid .item .item-content .item-content-img:hover {
-          transform: scale(1.04);
-          transition: all 0.5s; }
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
 
 .grid.imagenes-cargadas {
   opacity: 1; }
@@ -1410,15 +1408,24 @@ p {
 .overlay.activo {
   display: flex; }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .portfolio .header-portfolio .portfolio-form .search-bar {
-    width: 100%; }
+    width: calc(100% - 1rem); }
   .portfolio .grid .item {
-    width: calc(50% - 20px); } }
-@media screen and (max-width: 500px) {
-  .portfolio .header-portfolio .portfolio-form .search-bar {
-    width: 100%; }
+    width: 50%; }
+    .portfolio .grid .item .item-content {
+      position: relative; }
+      .portfolio .grid .item .item-content .item-content-img {
+        width: 100%; }
+      .portfolio .grid .item .item-content .item-content-img:hover {
+        transform: scale(1.04);
+        transition: all 0.5s; } }
+@media screen and (min-width: 1024px) {
   .portfolio .grid .item {
-    width: calc(100% - 20px); } }
+    padding: 0;
+    margin: 10px;
+    width: calc(25% - 20px); }
+    .portfolio .grid .item .item-content {
+      padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 .main-about {
-  padding: 4rem 0;
+  padding-top: 6rem;
   .content-main {
     .article-about-main {
       width: 100%;
@@ -19,11 +19,12 @@
       }
       .about-image-main {
         overflow: hidden;
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          padding: 0 1rem;
+          padding: 4rem 1rem;
         }
       }
     }
@@ -75,7 +76,6 @@
 
 @media screen and (min-width: 768px) {
   .main-about {
-    margin-top: 4rem;
     overflow: hidden;
     .content-main {
       display: flex;
@@ -84,12 +84,6 @@
         flex-direction: column;
         .about-info-main {
           padding: 1rem;
-        }
-        .about-image-main {
-          padding: 1rem 1rem 1rem 0;
-          img {
-            padding: 0;
-          }
         }
       }
     }
